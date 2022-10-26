@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equi\v="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picobello BV</title>
+    <script lang="javascript">
+    </script>
+    <style type="text/css">
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #2f2f2f;
+        }
+        .container {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        .container > div {
+            text-align: center;
+        }
+
+        .btn {
+            color:white;
+            width: 125px;
+            padding:25px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin:10px;
+            background-color:rgba(197, 11, 11, 0.528);
+        }
+
+        .btn.active {
+            background-color:rgba(184, 197, 11, 0.528);
+        }
+
+        .refresh {
+            background-color:rgb(120, 120, 255);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn active">
+            victory sound
+            <iframe width="100" height="100" src="https://www.myinstants.com/instant/final-fantasy-victory-fanfare/embed/" frameborder="0" scrolling="no"></iframe>    
+        </div>
+        <div class="btn active">
+            failure sound
+            <iframe width="100" height="100" src="https://www.myinstants.com/instant/wa-wa-wa-waaaaaaa-78755/embed/" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <a href="#"  id="flag1">
+            <!-- if vlag 1 not active -->
+            <!-- <div class="btn none">
+                vlag 1
+                status:off
+            </div> -->
+            <!-- else -->
+            <div class="btn active">
+                vlag 1
+                status:on
+            </div>
+            <!-- endif -->
+            </a>
+        <a href="#" onclick="simulateVlagToggle(2)" id="flag2">
+            <!-- if vlag 2 not active -->
+            <!-- <div class="btn none">
+                vlag 2
+                status:off
+            </div> -->
+            <!-- else -->
+            <div class="btn active">
+                vlag 2
+                status:on
+            </div>
+            <!-- endif -->
+        </a>
+        <div class="btn refresh" onclick="location.reload()">reload page</div>
+    </div>
+</body>
+</html>
